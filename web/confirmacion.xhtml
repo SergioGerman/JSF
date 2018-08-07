@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+    
+    <h:head>
+        <title>Confirmacion JSF</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="estilos.css"/>
+    </h:head>
+    <h:body>
+        <div>Pagina de confirmacion</div>
+        <h:panelGrid columns="2" columnClasses=".alinder-bold, normal">
+            <h:outputText value="saludo: "/>
+            <h:outputText value="#{registrationBean.saludo}"/>
+            <h:outputText value="nombre"/>
+            <h:outputText value="#{registrationBean.nombre}"/>
+            <h:outputText value="Apellidos:"/>
+            <h:outputText value="#{registrationBean.apellidos}"/>
+            <h:outputText value="Edad: "/>
+            <h:outputText value="#{registrationBean.edad}"/>
+            <h:outputText value="Email: "/>
+            <h:outputText value="#{registrationBean.email}"/>            
+        </h:panelGrid>
+    </h:body>
+</html>
